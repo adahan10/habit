@@ -36,10 +36,9 @@
   button{font-family:inherit; cursor:pointer}
   ::selection{background:color-mix(in srgb,var(--coral) 25%,transparent)}
 
-  /* ---------- shell ---------- */
   .shell{max-width:720px; margin:0 auto; padding:0 18px 120px}
 
-  /* ---------- dark header ---------- */
+  /* ---------- header ---------- */
   .topbar{
     background:var(--dark); color:#f3ede2; border-radius:0 0 26px 26px;
     padding:22px 26px 26px; margin:0 -18px 22px; position:relative; overflow:hidden;
@@ -50,29 +49,22 @@
   }
   .brandline{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px}
   .brand{display:flex; align-items:center; gap:10px}
-  .brandmark{
-    width:38px; height:38px; border-radius:12px; display:flex; align-items:center; justify-content:center;
-    background:var(--coral); color:#fff; font-size:18px; font-weight:800;
-    box-shadow:0 6px 16px color-mix(in srgb,var(--coral) 45%,transparent);
-  }
+  .brandmark{width:38px; height:38px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+    background:var(--coral); color:#fff; font-size:18px; font-weight:800; box-shadow:0 6px 16px color-mix(in srgb,var(--coral) 45%,transparent)}
   .brandtext{display:flex; flex-direction:column; line-height:1.15}
   .brandtext strong{font-size:19px; font-weight:750; letter-spacing:-.02em; color:#fff}
   .brandtext span{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:#a79d8d; font-weight:600}
   .top-actions{display:flex; gap:8px}
-  .tb-btn{
-    height:36px; padding:0 14px; border-radius:999px; border:1px solid #423c33; background:transparent;
-    color:#f3ede2; font-size:13px; font-weight:650; transition:.15s; display:inline-flex; align-items:center; gap:6px;
-  }
+  .tb-btn{height:36px; padding:0 14px; border-radius:999px; border:1px solid #423c33; background:transparent;
+    color:#f3ede2; font-size:13px; font-weight:650; transition:.15s; display:inline-flex; align-items:center; gap:6px}
   .tb-btn:hover{background:#35302a; border-color:#5a5348}
 
   .toprow{display:flex; justify-content:space-between; align-items:flex-end; gap:14px; flex-wrap:wrap}
   .greeting{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#b8ad9b; font-weight:700; margin:0 0 6px}
   h1.title{margin:0; font-size:clamp(26px,5vw,34px); font-weight:750; letter-spacing:-.03em; color:#fff}
   h1.title .accent{color:var(--coral)}
-  .streak-pill{
-    display:inline-flex; align-items:center; gap:7px; background:#332d25; border:1px solid #423c33;
-    border-radius:999px; padding:7px 14px; font-size:13px; font-weight:650;
-  }
+  .streak-pill{display:inline-flex; align-items:center; gap:7px; background:#332d25; border:1px solid #423c33;
+    border-radius:999px; padding:7px 14px; font-size:13px; font-weight:650}
   .streak-pill b{color:var(--gold); font-size:15px}
 
   /* ---------- views ---------- */
@@ -82,17 +74,14 @@
 
   /* ---------- week strip ---------- */
   .weekstrip{display:flex; gap:8px; margin-bottom:22px}
-  .wday{
-    flex:1; display:flex; flex-direction:column; align-items:center; gap:5px; padding:10px 4px 9px;
+  .wday{flex:1; display:flex; flex-direction:column; align-items:center; gap:5px; padding:10px 4px 9px;
     background:var(--paper); border:1px solid var(--line); border-radius:var(--r-sm); box-shadow:var(--shadow);
-    color:var(--ink-soft); transition:.15s; position:relative;
-  }
+    color:var(--ink-soft); transition:.15s; position:relative}
   .wday .dow{font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--ink-faint)}
   .wday .dom{font-size:18px; font-weight:750; color:var(--ink)}
   .wday .dot{width:5px; height:5px; border-radius:50%; background:var(--coral); opacity:0}
   .wday.today{background:var(--dark); border-color:var(--dark)}
-  .wday.today .dom{color:#fff} .wday.today .dow{color:#b8ad9b}
-  .wday.today .dot{opacity:1}
+  .wday.today .dom{color:#fff} .wday.today .dow{color:#b8ad9b} .wday.today .dot{opacity:1}
   .wday.complete .dot{opacity:1; background:var(--teal)}
   .wday:hover:not(.today){border-color:var(--coral)}
 
@@ -105,19 +94,15 @@
 
   /* ---------- habits ---------- */
   .habit-list{display:flex; flex-direction:column; gap:9px}
-  .habit{
-    display:flex; align-items:center; gap:13px; padding:13px 15px;
+  .habit{display:flex; align-items:center; gap:13px; padding:13px 15px;
     background:var(--paper); border:1px solid var(--line); border-radius:var(--r-sm);
-    box-shadow:var(--shadow); transition:border-color .15s, transform .15s;
-  }
+    box-shadow:var(--shadow); transition:border-color .15s, transform .15s}
   .habit:hover{border-color:var(--line-strong)}
   .habit.rest{background:var(--paper-2)}
   .habit.rest .h-name{color:var(--ink-soft)}
 
-  .pulse{
-    width:46px; height:46px; flex-shrink:0; border-radius:14px; border:2px solid var(--line-strong); background:transparent;
-    display:flex; align-items:center; justify-content:center; color:transparent; font-size:20px; font-weight:800; transition:all .18s;
-  }
+  .pulse{width:46px; height:46px; flex-shrink:0; border-radius:14px; border:2px solid var(--line-strong); background:transparent;
+    display:flex; align-items:center; justify-content:center; color:transparent; font-size:20px; font-weight:800; transition:all .18s}
   .pulse:hover:not(:disabled){border-color:var(--coral); color:color-mix(in srgb,var(--coral) 40%,transparent)}
   .habit.done .pulse{background:var(--coral); border-color:var(--coral); color:#fff; box-shadow:0 6px 16px color-mix(in srgb,var(--coral) 35%,transparent)}
   .habit.done .pulse.pop{animation:pop .4s ease}
@@ -132,11 +117,9 @@
   .h-menu{position:relative}
   .m-btn{width:34px; height:34px; border-radius:10px; border:none; background:transparent; color:var(--ink-faint); font-size:17px}
   .m-btn:hover{background:var(--paper-2); color:var(--ink)}
-  .m-drop{
-    position:absolute; top:calc(100% + 6px); right:0; z-index:40; min-width:132px; background:var(--paper);
+  .m-drop{position:absolute; top:calc(100% + 6px); right:0; z-index:40; min-width:132px; background:var(--paper);
     border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow-lg); overflow:hidden;
-    opacity:0; visibility:hidden; transform:scale(.95); transform-origin:top right; transition:.15s;
-  }
+    opacity:0; visibility:hidden; transform:scale(.95); transform-origin:top right; transition:.15s}
   .m-drop.open{opacity:1; visibility:visible; transform:none}
   .mi{display:flex; align-items:center; gap:8px; width:100%; padding:10px 14px; border:none; background:none; color:var(--ink); font-size:13px; text-align:left}
   .mi:hover{background:var(--paper-2)}
@@ -147,29 +130,26 @@
   .empty .s{font-size:12px}
 
   /* ---------- quote ---------- */
-  .quote{
-    margin-top:24px; background:var(--paper-2); border:1px dashed var(--line-strong);
-    border-radius:var(--r); padding:20px 22px; position:relative;
-  }
+  .quote{margin-top:24px; background:var(--paper-2); border:1px dashed var(--line-strong); border-radius:var(--r); padding:20px 22px; position:relative}
   .quote .qk{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-faint); font-weight:700}
-  .quote blockquote{
-    margin:10px 0 0; font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;
-    font-size:clamp(19px,3.4vw,24px); line-height:1.4; font-weight:500; color:var(--ink);
-  }
+  .quote blockquote{margin:10px 0 0; font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;
+    font-size:clamp(19px,3.4vw,24px); line-height:1.4; font-weight:500; color:var(--ink)}
   .quote .qa{margin-top:12px; font-size:13px; color:var(--ink-soft); display:flex; align-items:center; gap:10px; flex-wrap:wrap}
   .shuffle{border:1px solid var(--line-strong); background:var(--paper); color:var(--ink-soft); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:600}
   .shuffle:hover{border-color:var(--coral); color:var(--coral)}
 
-  /* ---------- stats grid on today ---------- */
+  /* ---------- stats grid ---------- */
   .stats-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:22px}
   .stat-box{background:var(--paper); border:1px solid var(--line); border-radius:var(--r-sm); padding:15px; text-align:center; box-shadow:var(--shadow)}
   .stat-box .n{font-size:26px; font-weight:800; letter-spacing:-.03em}
   .stat-box .l{font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-faint); font-weight:700; margin-top:2px}
   .stat-box.coral .n{color:var(--coral)} .stat-box.teal .n{color:var(--teal)} .stat-box.gold .n{color:var(--gold)}
 
-  /* ---------- heatmap ---------- */
+  /* ---------- panels ---------- */
   .panel{background:var(--paper); border:1px solid var(--line); border-radius:var(--r); padding:20px; box-shadow:var(--shadow); margin-bottom:20px}
   .panel > h3{margin:0 0 14px; font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-faint); font-weight:700}
+
+  /* ---------- heatmap ---------- */
   .hm-legend{display:flex; align-items:center; gap:4px; font-size:11px; color:var(--ink-faint)}
   .hm-scroll{display:flex; gap:5px; overflow-x:auto; padding-bottom:4px; scrollbar-width:none}
   .hm-scroll::-webkit-scrollbar{display:none}
@@ -212,8 +192,7 @@
   .tcol .ct{height:78px; width:100%; display:flex; align-items:flex-end}
   .tcol .cb{width:100%; border-radius:5px 5px 2px 2px; background:var(--paper-2); border:1px solid var(--line); min-height:3px}
   .tcol.current .cb{background:linear-gradient(180deg,var(--coral),var(--teal)); border-color:transparent}
-  .tcol.current .cv{color:var(--ink); font-weight:700}
-  .tcol.current .cl{color:var(--ink)}
+  .tcol.current .cv{color:var(--ink); font-weight:700} .tcol.current .cl{color:var(--ink)}
   .tcol .cl{font-size:11px; color:var(--ink-faint)}
   .st-habit{background:var(--paper-2); border:1px solid var(--line); border-radius:12px; padding:13px; margin-bottom:9px}
   .sth-head{display:flex; align-items:center; gap:8px; margin-bottom:5px}
@@ -239,6 +218,30 @@
   .sd.before{background:var(--paper-2); border-color:var(--line); opacity:.3}
   .legend{display:flex; gap:14px; flex-wrap:wrap; font-size:11px; color:var(--ink-faint); margin-top:11px}
   .legend span{display:flex; align-items:center; gap:5px}
+
+  /* ---------- memory ---------- */
+  .memory-hero{background:var(--dark); color:#f3ede2; border-radius:var(--r); padding:20px 22px; margin-bottom:20px; position:relative; overflow:hidden}
+  .memory-hero::after{content:""; position:absolute; right:-40px; bottom:-40px; width:160px; height:160px;
+    border-radius:50%; background:radial-gradient(circle,color-mix(in srgb,var(--teal) 45%,transparent) 0%,transparent 70%); opacity:.3}
+  .memory-hero .mk{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:#b8ad9b; font-weight:700}
+  .memory-hero .mn{font-size:32px; font-weight:800; letter-spacing:-.03em; color:#fff; margin-top:4px}
+  .memory-hero .ms{font-size:13px; color:#b8ad9b; margin-top:2px}
+  .mem-log{display:flex; flex-direction:column; gap:6px; max-height:420px; overflow-y:auto; scrollbar-width:thin}
+  .mem-log::-webkit-scrollbar{width:6px}
+  .mem-log::-webkit-scrollbar-thumb{background:var(--line-strong); border-radius:3px}
+  .mem-entry{display:flex; align-items:center; gap:10px; padding:9px 12px; background:var(--paper-2);
+    border:1px solid var(--line); border-radius:10px; font-size:13px}
+  .mem-entry .chk{width:22px; height:22px; border-radius:6px; background:var(--teal); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; flex-shrink:0}
+  .mem-entry .mnm{flex:1; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .mem-entry .mdt{font-size:11.5px; color:var(--ink-faint); white-space:nowrap}
+  .mem-month{margin-bottom:16px}
+  .mem-month-title{font-size:12px; font-weight:750; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:8px}
+  .mem-month-stats{display:flex; align-items:center; gap:10px; margin-bottom:8px}
+  .mem-month-stats .cnt{font-size:22px; font-weight:800; letter-spacing:-.02em}
+  .mem-month-stats .cnt span{font-size:12px; font-weight:600; color:var(--ink-soft); margin-left:4px}
+  .mem-month-bar{flex:1; height:8px; border-radius:5px; background:var(--paper-2); border:1px solid var(--line); overflow:hidden}
+  .mem-month-bar > i{display:block; height:100%; border-radius:5px; background:linear-gradient(90deg,var(--coral),var(--teal))}
 
   /* ---------- themes ---------- */
   .themes{display:grid; grid-template-columns:repeat(2,1fr); gap:9px}
@@ -271,23 +274,16 @@
   .day-toggle{min-width:42px; height:34px; padding:0 7px; border-radius:9px; border:1px solid var(--line-strong); background:var(--paper); color:var(--ink-soft); font-size:11px; font-weight:700}
   .day-toggle.selected{background:var(--coral); color:#fff; border-color:transparent}
   .day-toggle:hover:not(.selected){border-color:var(--coral)}
-  input[type="text"], textarea{
-    width:100%; background:var(--paper-2); border:1px solid var(--line-strong); border-radius:12px;
-    color:var(--ink); padding:12px 14px; font-size:15px; outline:none; font-family:inherit;
-  }
+  input[type="text"], textarea{width:100%; background:var(--paper-2); border:1px solid var(--line-strong); border-radius:12px;
+    color:var(--ink); padding:12px 14px; font-size:15px; outline:none; font-family:inherit}
   input[type="text"]:focus, textarea:focus{border-color:var(--coral); box-shadow:0 0 0 3px color-mix(in srgb,var(--coral) 16%,transparent)}
 
   /* ---------- overlays ---------- */
-  .overlay{
-    position:fixed; inset:0; background:rgba(35,30,24,.45); backdrop-filter:blur(4px); display:flex;
-    align-items:center; justify-content:center; z-index:100; padding:20px; overflow-y:auto;
-    opacity:0; visibility:hidden; transition:.2s;
-  }
+  .overlay{position:fixed; inset:0; background:rgba(35,30,24,.45); backdrop-filter:blur(4px); display:flex;
+    align-items:center; justify-content:center; z-index:100; padding:20px; overflow-y:auto; opacity:0; visibility:hidden; transition:.2s}
   .overlay.open{opacity:1; visibility:visible}
-  .modal{
-    margin:auto; background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:26px;
-    max-width:430px; width:100%; box-shadow:var(--shadow-lg); position:relative; transform:scale(.96); transition:transform .2s;
-  }
+  .modal{margin:auto; background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:26px;
+    max-width:430px; width:100%; box-shadow:var(--shadow-lg); position:relative; transform:scale(.96); transition:transform .2s}
   .overlay.open .modal{transform:none}
   .modal.wide{max-width:600px}
   .modal h2{margin:0 0 5px; font-size:21px; font-weight:750; letter-spacing:-.02em}
@@ -297,15 +293,11 @@
   .modal .close-x:hover{color:var(--ink)}
 
   /* ---------- bottom nav ---------- */
-  .bottomnav{
-    position:fixed; left:50%; transform:translateX(-50%); bottom:calc(14px + env(safe-area-inset-bottom));
+  .bottomnav{position:fixed; left:50%; transform:translateX(-50%); bottom:calc(14px + env(safe-area-inset-bottom));
     z-index:60; display:flex; gap:4px; padding:7px; background:var(--dark); border-radius:20px;
-    box-shadow:0 14px 34px rgba(30,22,10,.30); width:calc(100% - 32px); max-width:460px;
-  }
-  .bottomnav button{
-    flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:8px 4px;
-    border:none; background:transparent; border-radius:13px; color:#8d8375; font-size:10.5px; font-weight:650; transition:.15s;
-  }
+    box-shadow:0 14px 34px rgba(30,22,10,.30); width:calc(100% - 32px); max-width:460px}
+  .bottomnav button{flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:8px 4px;
+    border:none; background:transparent; border-radius:13px; color:#8d8375; font-size:10.5px; font-weight:650; transition:.15s}
   .bottomnav button .ic{font-size:17px}
   .bottomnav button.active{color:#fff; background:#3a332b}
 
@@ -313,8 +305,7 @@
 
   @media(max-width:400px){
     .stats-grid{grid-template-columns:1fr}
-    .weekstrip{gap:5px}
-    .wday .dom{font-size:16px}
+    .weekstrip{gap:5px} .wday .dom{font-size:16px}
   }
   @media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important; transition-duration:.001s!important}}
 </style>
@@ -346,7 +337,6 @@
   <!-- ============ TODAY ============ -->
   <section class="view active" id="view-today">
     <div class="weekstrip" id="weekStrip"></div>
-
     <div class="sechead">
       <h2 id="todayTitle">Today's habits</h2>
       <div class="tabs">
@@ -355,7 +345,6 @@
       </div>
     </div>
     <div class="habit-list" id="todayHabits"></div>
-
     <div class="quote">
       <div class="qk" id="heroDate">—</div>
       <blockquote id="quoteText"></blockquote>
@@ -364,7 +353,6 @@
         <button class="shuffle" id="shuffleBtn">↻ another</button>
       </div>
     </div>
-
     <div class="stats-grid">
       <div class="stat-box coral"><div class="n" id="sToday">0%</div><div class="l">Today</div></div>
       <div class="stat-box teal"><div class="n" id="sWeek">0%</div><div class="l">This week</div></div>
@@ -379,13 +367,11 @@
       <div class="stat-box"><div class="n" id="pMonth">0</div><div class="l">This month</div></div>
       <div class="stat-box"><div class="n" id="pWeek">0</div><div class="l">This week</div></div>
     </div>
-
     <div class="panel">
       <h3>By habit · all time</h3>
       <div id="progressBars"></div>
       <div class="empty" id="progressEmpty" style="display:none">Add a habit to see your progress here.</div>
     </div>
-
     <div class="panel">
       <div class="sechead" style="margin:0 0 10px">
         <h3 style="margin:0">Consistency</h3>
@@ -398,7 +384,6 @@
         <div class="hm-weeks" id="heatmapWeeks"></div>
       </div>
     </div>
-
     <div class="panel">
       <h3>Monthly breakdown</h3>
       <div class="st-nav">
@@ -434,16 +419,15 @@
     <div class="panel">
       <div class="sechead" style="margin:0 0 14px">
         <h3 style="margin:0">All habits <span id="manageCount" style="color:var(--ink-faint)">(0)</span></h3>
-        <button class="btn" id="newHabitBtn" style="background:var(--coral);color:#fff;border-color:transparent;height:34px;padding:0 14px;border-radius:999px;font-size:13px;font-weight:650">＋ New</button>
+        <button id="newHabitBtn" style="background:var(--coral);color:#fff;border-color:transparent;height:34px;padding:0 14px;border-radius:999px;font-size:13px;font-weight:650">＋ New</button>
       </div>
       <div id="manageList"></div>
     </div>
-
     <div class="panel">
       <h3>My motivations</h3>
-      <div class="motiv-add" style="display:flex;gap:10px;align-items:flex-end">
+      <div style="display:flex;gap:10px;align-items:flex-end">
         <textarea id="motivInput" placeholder="Write a line that keeps you going…" maxlength="200" style="flex:1;resize:vertical;min-height:46px"></textarea>
-        <button class="btn" id="motivAddBtn" style="background:var(--coral);color:#fff;border-color:transparent;height:44px;padding:0 16px;border-radius:12px;font-size:13px;font-weight:650">Add</button>
+        <button id="motivAddBtn" style="background:var(--coral);color:#fff;border-color:transparent;height:44px;padding:0 16px;border-radius:12px;font-size:13px;font-weight:650">Add</button>
       </div>
       <div id="motivList"></div>
     </div>
@@ -457,6 +441,35 @@
     </div>
   </section>
 
+  <!-- ============ MEMORY ============ -->
+  <section class="view" id="view-memory">
+    <div class="memory-hero">
+      <div class="mk">Your history</div>
+      <div class="mn" id="memTotal">0 check-ins</div>
+      <div class="ms" id="memSub">Every habit you've ever completed, kept forever.</div>
+    </div>
+    <div class="panel">
+      <h3>All-time activity</h3>
+      <div class="sechead" style="margin:0 0 10px">
+        <div class="hm-legend" style="margin:0">
+          <span>Less</span><span class="hm-cell"></span><span class="hm-cell l1"></span><span class="hm-cell l2"></span><span class="hm-cell l3"></span><span class="hm-cell l4"></span><span>More</span>
+        </div>
+      </div>
+      <div class="hm-scroll">
+        <div class="hm-daylabels"><span></span><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span></div>
+        <div class="hm-weeks" id="memHeatmapWeeks"></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Month by month</h3>
+      <div id="memMonths"></div>
+    </div>
+    <div class="panel">
+      <h3>Check-in log</h3>
+      <div class="mem-log" id="memLog"></div>
+    </div>
+  </section>
+
   <footer class="note">Your data is saved automatically in this browser.</footer>
 </div>
 
@@ -466,6 +479,7 @@
   <button data-view="insights"><span class="ic">▤</span>Insights</button>
   <button data-view="habits"><span class="ic">✓</span>Habits</button>
   <button data-view="themes"><span class="ic">◒</span>Theme</button>
+  <button data-view="memory"><span class="ic">▣</span>Memory</button>
 </nav>
 
 <!-- Add habit -->
@@ -512,10 +526,10 @@
 <div class="overlay" id="deleteOverlay">
   <div class="modal" style="max-width:390px">
     <h2>Delete habit?</h2>
-    <p class="sub">"<span id="deleteHabitName"></span>" and all of its check-in history will be removed. This can't be undone.</p>
+    <p class="sub">"<span id="deleteHabitName"></span>" will be removed from your list, but <strong>all of its check-ins stay in your Memory</strong>. You can still see everything you've done.</p>
     <div style="display:flex;gap:10px">
-      <button type="button" id="cancelDeleteBtn" class="btn" style="flex:1;justify-content:center;border-radius:12px;height:42px">Cancel</button>
-      <button type="button" id="confirmDeleteBtn" class="btn" style="flex:1;justify-content:center;border-radius:12px;height:42px;background:var(--rose);color:#fff;border-color:transparent">Delete</button>
+      <button type="button" id="cancelDeleteBtn" style="flex:1;justify-content:center;border-radius:12px;height:42px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);font-weight:650">Cancel</button>
+      <button type="button" id="confirmDeleteBtn" style="flex:1;justify-content:center;border-radius:12px;height:42px;background:var(--rose);color:#fff;border:none;font-weight:650">Delete</button>
     </div>
   </div>
 </div>
@@ -525,15 +539,15 @@
   <div class="modal wide">
     <button class="close-x" data-close="manageOverlay">✕</button>
     <h2>Manage</h2>
-    <p class="sub">Every habit in one place. Deleting a habit also removes all of its check-ins.</p>
+    <p class="sub">Every habit in one place. Deleting a habit keeps its history in Memory.</p>
     <div class="field-label">Theme</div>
     <div class="themes" id="themePickModal"></div>
     <div class="field-label">All habits <span id="manageCountModal">(0)</span></div>
     <div id="manageListModal"></div>
     <div class="field-label">My motivations</div>
-    <div class="motiv-add" style="display:flex;gap:10px;align-items:flex-end">
+    <div style="display:flex;gap:10px;align-items:flex-end">
       <textarea id="motivInputModal" placeholder="Write a line that keeps you going…" maxlength="200" style="flex:1;resize:vertical;min-height:46px"></textarea>
-      <button class="btn" id="motivAddBtnModal" style="background:var(--coral);color:#fff;border-color:transparent;height:44px;padding:0 16px;border-radius:12px;font-size:13px;font-weight:650">Add</button>
+      <button id="motivAddBtnModal" style="background:var(--coral);color:#fff;border:none;height:44px;padding:0 16px;border-radius:12px;font-size:13px;font-weight:650">Add</button>
     </div>
     <div id="motivListModal"></div>
   </div>
@@ -622,7 +636,7 @@ const QUOTES = [
 
 /* ============ state ============ */
 let today = new Date();
-let state = { userName:'', habits:[], theme:'daybook', showAll:false, customQuotes:[], quoteSkip:{date:'', n:0} };
+let state = { userName:'', habits:[], theme:'daybook', showAll:false, customQuotes:[], quoteSkip:{date:'', n:0}, memoryLog:[] };
 let justToggled = null;
 let addSelectedDays = new Set();
 let selectedColor = TAG_COLORS[0];
@@ -665,6 +679,13 @@ function scheduleLabel(habit){
   return DAY_PICK_ORDER.filter(d => days.includes(d)).map(d => DOW_SHORT[d]).join(" ");
 }
 
+/* ============ memory log ============ */
+function logMemory(habitId, habitName, color, key){
+  if(!state.memoryLog) state.memoryLog = [];
+  state.memoryLog.push({ hid:habitId, name:habitName, color, date:key, at:Date.now() });
+}
+function memoryTotal(){ return (state.memoryLog || []).length; }
+
 /* ============ theme ============ */
 function applyTheme(){
   const t = THEMES[state.theme] || THEMES.daybook;
@@ -698,9 +719,10 @@ function scheduleSave(){ clearTimeout(saveTimer); saveTimer = setTimeout(persist
 async function loadState(){
   try{
     const raw = await storageGet(STORAGE_KEY);
-    if(raw){ state = Object.assign({ userName:'', habits:[], theme:'daybook', showAll:false, customQuotes:[], quoteSkip:{date:'',n:0} }, JSON.parse(raw)); }
+    if(raw){ state = Object.assign({ userName:'', habits:[], theme:'daybook', showAll:false, customQuotes:[], quoteSkip:{date:'',n:0}, memoryLog:[] }, JSON.parse(raw)); }
     else { await persist(); }
   }catch(e){}
+  if(!state.memoryLog) state.memoryLog = [];
   state.habits.forEach(h => {
     if(!h.days) h.days = {};
     if(!h.activeDays || !h.activeDays.length) h.activeDays = ALL_DAYS.slice();
@@ -722,15 +744,8 @@ document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click'
 
 /* ============ rendering ============ */
 function renderAll(){
-  renderHeader();
-  renderHero();
-  renderOverview();
-  renderTodayHabits();
-  renderProgress();
-  renderHeatmap();
-  renderStats();
-  renderManage();
-  renderThemes();
+  renderHeader(); renderHero(); renderOverview(); renderTodayHabits();
+  renderProgress(); renderHeatmap(); renderStats(); renderManage(); renderThemes(); renderMemory();
 }
 
 function renderHeader(){
@@ -745,9 +760,7 @@ function renderHeader(){
   document.getElementById('streakPill').style.display = best > 0 ? 'inline-flex' : 'none';
 }
 
-function motivationPool(){
-  return state.customQuotes.map(t => ({text:t, author:'You'})).concat(QUOTES);
-}
+function motivationPool(){ return state.customQuotes.map(t => ({text:t, author:'You'})).concat(QUOTES); }
 function quoteAt(offset){
   const pool = motivationPool();
   const skip = state.quoteSkip && state.quoteSkip.date === dateKey(today) ? state.quoteSkip.n : 0;
@@ -793,8 +806,7 @@ function renderOverview(){
       if(isScheduled(h,d)){ mSched++; if(h.days[dateKey(d)]) mDone++; }
     }
   });
-  const tPct = tSched ? Math.round(tDone/tSched*100) : 0;
-  animateNumber(document.getElementById('sToday'), tPct, '%');
+  animateNumber(document.getElementById('sToday'), tSched ? Math.round(tDone/tSched*100) : 0, '%');
   animateNumber(document.getElementById('sWeek'), wSched ? Math.round(wDone/wSched*100) : 0, '%');
   animateNumber(document.getElementById('sMonth'), mSched ? Math.round(mDone/mSched*100) : 0, '%');
 }
@@ -813,8 +825,7 @@ function renderWeekStrip(){
     else {
       const sched = state.habits.filter(h => isScheduled(h,d));
       const key = dateKey(d);
-      const done = sched.length > 0 && sched.every(h => h.days[key]);
-      if(done) cell.classList.add('complete');
+      if(sched.length > 0 && sched.every(h => h.days[key])) cell.classList.add('complete');
     }
     el.appendChild(cell);
   }
@@ -836,7 +847,11 @@ function habitCard(habit){
     if(justToggled && justToggled.id === habit.id) btn.classList.add('pop');
     btn.addEventListener('click', () => {
       if(habit.days[key]) delete habit.days[key];
-      else { habit.days[key] = true; justToggled = { id: habit.id }; }
+      else {
+        habit.days[key] = true;
+        logMemory(habit.id, habit.name, habit.color || TAG_COLORS[0], key);
+        justToggled = { id: habit.id };
+      }
       scheduleSave(); renderAll();
     });
   }
@@ -886,7 +901,7 @@ function renderTodayHabits(){
   renderWeekStrip();
   const items = state.showAll ? state.habits : state.habits.filter(h => isScheduled(h, today));
   if(!state.habits.length){
-    list.appendChild(emptyBlock('◐', 'No habits yet', 'Tap "＋ New" or the + button to add your first ritual.'));
+    list.appendChild(emptyBlock('◐', 'No habits yet', 'Tap "＋ New" to add your first ritual.'));
     return;
   }
   if(!items.length){
@@ -954,6 +969,128 @@ function renderHeatmap(){
   }
 }
 
+/* ============ memory view ============ */
+function renderMemory(){
+  const total = memoryTotal();
+  document.getElementById('memTotal').textContent = `${total} check-in${total===1?'':'s'}`;
+  const distinct = new Set((state.memoryLog||[]).map(m => m.date)).size;
+  document.getElementById('memSub').textContent = total
+    ? `${distinct} active day${distinct===1?'':'s'} · every completion, kept forever`
+    : 'Every habit you complete from now on will appear here.';
+
+  renderMemoryHeatmap();
+  renderMemoryMonths();
+  renderMemoryLog();
+}
+
+function renderMemoryHeatmap(){
+  const weeksEl = document.getElementById('memHeatmapWeeks');
+  weeksEl.innerHTML = '';
+  const counts = {};
+  (state.memoryLog||[]).forEach(m => { counts[m.date] = (counts[m.date]||0) + 1; });
+  const maxCount = Math.max(1, ...Object.values(counts));
+
+  const WEEKS = 13;
+  const start = new Date(today);
+  start.setDate(start.getDate() - (WEEKS*7 - 1) - today.getDay());
+  const cursor = new Date(start);
+  let prevMonth = null;
+  for(let w=0; w<WEEKS; w++){
+    const weekEl = mk('div', 'hm-week');
+    if(cursor.getMonth() !== prevMonth){
+      weekEl.appendChild(mk('div', 'hm-week-label', MONTH_SHORT[cursor.getMonth()]));
+      prevMonth = cursor.getMonth();
+    }
+    for(let d=0; d<7; d++){
+      const cell = mk('div', 'hm-cell');
+      const date = new Date(cursor);
+      if(date > today) cell.className = 'hm-cell future';
+      else {
+        const key = dateKey(date);
+        const c = counts[key] || 0;
+        if(!c) cell.className='hm-cell';
+        else {
+          const ratio = c / maxCount;
+          const level = ratio<=0.25 ? 1 : ratio<=0.5 ? 2 : ratio<=0.75 ? 3 : 4;
+          cell.className = 'hm-cell l' + level;
+        }
+        cell.title = `${fmtKey(key)} — ${c} check-in${c===1?'':'s'}`;
+      }
+      if(isSameDate(date, today)) cell.classList.add('is-today');
+      weekEl.appendChild(cell);
+      cursor.setDate(cursor.getDate()+1);
+    }
+    weeksEl.appendChild(weekEl);
+  }
+}
+
+function renderMemoryMonths(){
+  const el = document.getElementById('memMonths');
+  el.innerHTML = '';
+  if(!state.memoryLog || !state.memoryLog.length){
+    el.appendChild(mk('div', 'empty', 'No check-ins yet. Complete a habit and it will be saved here forever.'));
+    return;
+  }
+  const groups = {};
+  state.memoryLog.forEach(m => {
+    const [y,mo] = m.date.split('-').map(Number);
+    const k = `${y}-${pad(mo)}`;
+    if(!groups[k]) groups[k] = { y, m: mo-1, count: 0 };
+    groups[k].count++;
+  });
+  const sorted = Object.values(groups).sort((a,b) => (b.y - a.y) || (b.m - a.m));
+  const maxCount = Math.max(1, ...sorted.map(g => g.count));
+
+  sorted.forEach(g => {
+    const wrap = mk('div', 'mem-month');
+    const title = mk('div', 'mem-month-title', `${MONTH_NAMES[g.m]} ${g.y}`);
+    wrap.appendChild(title);
+
+    const stats = mk('div', 'mem-month-stats');
+    const cnt = mk('div', 'cnt', String(g.count));
+    const suffix = mk('span', '', `check-in${g.count===1?'':'s'}`);
+    cnt.appendChild(suffix);
+    stats.appendChild(cnt);
+    const bar = mk('div', 'mem-month-bar');
+    const fill = mk('i'); fill.style.width = Math.round(g.count / maxCount * 100) + '%';
+    bar.appendChild(fill);
+    stats.appendChild(bar);
+    wrap.appendChild(stats);
+
+    const log = mk('div', 'mem-log');
+    const entries = state.memoryLog
+      .filter(m => m.date.startsWith(`${g.y}-${pad(g.m+1)}`))
+      .sort((a,b) => b.date.localeCompare(a.date) || b.at - a.at);
+    entries.forEach(m => {
+      const row = mk('div', 'mem-entry');
+      const chk = mk('div', 'chk', '✓');
+      const nm = mk('div', 'mnm', m.name);
+      const dt = mk('div', 'mdt', fmtKey(m.date));
+      row.appendChild(chk); row.appendChild(nm); row.appendChild(dt);
+      log.appendChild(row);
+    });
+    wrap.appendChild(log);
+    el.appendChild(wrap);
+  });
+}
+
+function renderMemoryLog(){
+  const el = document.getElementById('memLog');
+  el.innerHTML = '';
+  if(!state.memoryLog || !state.memoryLog.length){
+    el.appendChild(mk('div', 'empty', 'Nothing yet — your check-ins will stack up here.'));
+    return;
+  }
+  const sorted = state.memoryLog.slice().sort((a,b) => b.date.localeCompare(a.date) || b.at - a.at);
+  sorted.forEach(m => {
+    const row = mk('div', 'mem-entry');
+    row.appendChild(mk('div', 'chk', '✓'));
+    row.appendChild(mk('div', 'mnm', m.name));
+    row.appendChild(mk('div', 'mdt', fmtKey(m.date)));
+    el.appendChild(row);
+  });
+}
+
 /* ============ overlays ============ */
 function openOverlay(id){ document.getElementById(id).classList.add('open'); }
 function closeOverlay(id){ document.getElementById(id).classList.remove('open'); }
@@ -973,10 +1110,7 @@ function buildThemeGrid(containerId){
     tp.appendChild(b);
   });
 }
-function renderThemes(){
-  buildThemeGrid('themePick');
-  buildThemeGrid('themePickModal');
-}
+function renderThemes(){ buildThemeGrid('themePick'); buildThemeGrid('themePickModal'); }
 
 /* ============ manage ============ */
 function buildManageList(containerId){
@@ -1023,10 +1157,8 @@ function buildMotivList(containerId){
 }
 
 function renderManage(){
-  buildManageList('manageList');
-  buildManageList('manageListModal');
-  buildMotivList('motivList');
-  buildMotivList('motivListModal');
+  buildManageList('manageList'); buildManageList('manageListModal');
+  buildMotivList('motivList'); buildMotivList('motivListModal');
 }
 
 function addMotiv(text){
@@ -1164,7 +1296,7 @@ document.getElementById('saveEditBtn').addEventListener('click', () => {
   scheduleSave(); editingId = null; closeOverlay('editOverlay'); renderAll();
 });
 
-/* ============ delete ============ */
+/* ============ delete (keeps memory!) ============ */
 let pendingDeleteId = null;
 function askDeleteHabit(id){
   const habit = state.habits.find(h => h.id === id);
@@ -1175,7 +1307,11 @@ function askDeleteHabit(id){
 }
 document.getElementById('cancelDeleteBtn').addEventListener('click', () => { pendingDeleteId = null; closeOverlay('deleteOverlay'); });
 document.getElementById('confirmDeleteBtn').addEventListener('click', () => {
-  if(pendingDeleteId){ state.habits = state.habits.filter(h => h.id !== pendingDeleteId); scheduleSave(); }
+  if(pendingDeleteId){
+    state.habits = state.habits.filter(h => h.id !== pendingDeleteId);
+    // memoryLog is intentionally NOT touched — history is permanent
+    scheduleSave();
+  }
   pendingDeleteId = null;
   closeOverlay('deleteOverlay');
   renderAll();
